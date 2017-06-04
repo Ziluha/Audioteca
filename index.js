@@ -19,9 +19,6 @@ const genreService = require('./services/genre')(dbcontext.genre);
 const ratingService = require('./services/rating')(dbcontext.rating);
 const reviewService = require('./services/review')(dbcontext.review);
 
-
-
-
 const apiController = require('./controllers/api')(trackService, trackstatService, genreService, ratingService, reviewService, artistService);
 const frontController = require('./controllers/front');
 
