@@ -1,0 +1,80 @@
+doctype html
+html
+    head
+        name Main Page
+        link(rel="stylesheet",href="/css/font-awesome.min.css")
+        link(rel="stylesheet",href="/css/main.css")
+        script(src="/js/jquery-3.2.1.min.js")
+        script(src="/js/script.js")
+        script(src="/js/main.js")
+    body
+        #bg
+        #content
+            #header
+                a#logo(href="/") Audioteca
+                #logout.fa.fa-sign-out(name="Log out")
+                #search
+                    form#search_form(action="",method="POST")
+                        .search-field
+                            input(type="text",name="q")
+                            .fa.fa-spin.fa-circle-o-notch.hidden
+                        button Search
+                    #results.hidden.popup
+            #spinner
+                .fa.fa-spin.fa-circle-o-notch
+            #main.content
+                h1 Your songs
+                #reading.category
+                    h3 
+                        |Favourited
+                        span.count
+                    .list
+                #wanted.category
+                    h3
+                        |Nostalghia
+                        span.count
+                    .list
+                #stopped.category
+                    h3
+                        |Chilling
+                        span.count
+                    .list
+                #notreading.category
+                    h3
+                        |Will not listen this shit
+                        span.count
+                    .list
+            #track.content
+                #name
+                    img(src="")
+                    .artist #artist
+                    .name #name
+                    .rating
+                        .fa.fa-star
+                        span.playcount 0
+                    #genre
+                        span.genre #Genre
+                        i.fa.fa-plus.add_genre
+                form#add_genre.hidden(action="",method="POST")
+                    h1 Add genre
+                    input(name="genre", placeholder="Enter genre")
+                    input(type="hidden",name="trackid")
+                    button Add genre
+                h1 Status
+                #status
+                    button.status(data-id="1",rel="status") Will not listen
+                    button.status(data-id="2",rel="status") Favourited
+                    button.status(data-id="3",rel="status") Nostalghia
+                    button.status(data-id="4",rel="status") Chilling
+                h1 Annotation
+                .annotation #Annotation
+                h1 Reviews
+                #review
+                    .list
+                h1 Add review
+                form#add_review(action="",method="POST")
+                    textarea(name="review", placeholder="Enter review...")
+                    input(type="hidden",name="trackid")
+                    button Add review
+
+        #notes

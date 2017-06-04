@@ -1,0 +1,67 @@
+html, body {height:100%;padding:0;margin:0}
+body {background:#555;font-family:Calibri; color:#ddd; font-weight:200}
+
+#bg {position:fixed; width:100%; height:100%; opacity:0.2; background-image:url(/img/bg1.jpg); background-size:cover;background-position:center center;filter: blur(5px);}
+input, button,textarea {outline:none !important;background:rgba(255,255,255,0.6);font-family:Calibri; padding:10px 25px; box-sizing:border-box; margin:10px 5px; font-size:18px; border:1px solid #ddd;}
+input:hover, textarea:hover {background:rgba(255,255,255,0.7)}
+input:focus, textarea:focus {background:rgba(255,255,255,0.8);}
+textarea {display:block; width:100%; box-sizing:border-box; max-width:100%; min-height: 150px}
+input[type=submit], button {background:transparent; color:#ddd;border:1px solid #ddd; cursor:pointer}
+input[type=submit]:hover, button:hover, button.active {background:#ddd; color:#333; }
+
+h1,h2,h3,h4 {font-weight:200}
+
+.hidden {display:none}
+
+#notes {position:fixed; right:20px; bottom:20px; width:400px;}
+.error {padding:15px 30px; background:rgba(255,0,0,0.3); color:#fff; font-weight:500;font-size:20px;margin:10px 0}
+
+#content {width:80%;margin:0 auto;max-width:1200px;position:relative}
+#header {height:80px;padding-top:40px}
+#logo {display:block;width:240px;height:80px;background:rgba(0,0,0,0.3);float:left;font-size:34px; font-weight:200; font-family: 'Agency FB'; line-height:80px; text-align:center; color:#fff; text-decoration: none;}
+#logo:hover {background:rgba(0,0,0,0.4)}
+#search {float:right;margin-top:8px;position:relative; color:#000}
+#search input {width:500px}
+#search #results {position:absolute;left:0;top:60px;width:100%;box-sizing:border-box;background:rgba(0,0,0,0.5);max-height:400px; overflow:auto}
+#search .result {padding:10px 25px; height:75px;cursor:default}
+#search .result:hover {background:rgba(0,0,0,0.5)}
+#search .result img {float:left}
+#search .result span {display:block;line-height:20px; color:#fff;padding-left:67px;}
+#search .result .artist {color:#ddd;margin-top:15px}
+#search .result .name {font-size:20px;text-overflow: ellipsis; white-space: nowrap; padding-left:17px; overflow:hidden}
+#search .search-field {position:relative; display:inline-block}
+#search .fa-spin {position:absolute; right:20px; top:24px}
+
+.content {margin-top:60px; display:none}
+#spinner {font-size:100px; text-align:center; position:fixed; top:50%; margin-top:-0.5em; width:100%;left:0}
+#main .category {margin-bottom:40px}
+.category .list {min-height:200px; background:rgba(0,0,0,0.3);overflow:auto; max-height:400px}
+.category .count {display:inline-block;color:#ccc;margin-left:10px; font-size:12px;vertical-align:middle}
+.category .track {cursor:default;display:inline-block; vertical-align:top;width:200px; height:200px; text-align:center; padding:25px; box-sizing:border-box}
+.category .track:hover {background:rgba(0,0,0,0.2)}
+.category .track img {width:70px;}
+.category .track .artist {font-size:14px; color:#ddd; text-overflow:ellipsis; overflow:hidden; white-space: nowrap}
+.category .track .name {font-size:18px; text-overflow:ellipsis; overflow:hidden; white-space: nowrap}
+
+
+.popup {z-index:2}
+
+#track #name {height:147px;}
+#track img {float:left;}
+#track #name>div {padding-left:120px; line-height:35px;}
+#track .artist {color:#ddd;padding-top:4px; font-size:24px}
+#track .name {font-size:32px;}
+#track .rating {font-size:26px; color:#ccc}
+#track #status {text-align:center}
+#track .status {margin:0 20px}
+#track .annotation {font-size: 20px}
+#track .genre {font-size:22px;padding-right:20px; display:inline-block}
+#track #review .list .text {font-style: italic; padding:10px; font-size: 20px}
+#track #review .list .profile {font: sans-serif; padding: 3px; font-size: 24px; text-align:left; margin-left:40px}
+#track #review .list .date {font-style: italic; font: sans-serif;  font-size: 12px; text-align:right;}
+
+#logout {font-size:35px; color:#ccc; line-height:80px;margin-left:30px; cursor:pointer}
+#logout:hover {color:#fff}
+
+.add_genre {color:#ccc}
+.add_genre:hover {color:#fff}

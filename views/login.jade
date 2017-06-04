@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        name Login Page
+        link(rel="stylesheet",href="/css/font-awesome.min.css")
+        link(rel="stylesheet",href="/css/login.css")
+        script(src="/js/jquery-3.2.1.min.js")
+        script(src="/js/script.js")
+        script(src="/js/login.js")
+    body
+        #bg
+        #login.tab-container
+            .tabs
+                a.tab.active(rel="tab", href="#", data-name="signin") Sign In
+                a.tab(rel="tab", href="#", data-name="signup") Sigh Up
+            form#auth.tab-content(action="",method="POST",data-name="signin")
+                input(type="text",name="login",placeholder="Login")
+                input(type="password",name="password",placeholder="Password")
+                button 
+                    span.text Log In
+                    span.fa.fa-spin.fa-circle-o-notch.hidden
+            form#reg.tab-content.hidden(action="",method="POST",data-name="signup")
+                input(type="text",name="login",placeholder="Login")
+                input(type="password",name="password",placeholder="Password")
+                button 
+                    span.text Sign Up
+                    span.fa.fa-spin.fa-circle-o-notch.hidden
+        #notes

@@ -1,0 +1,227 @@
+paths:
+  /artists/{artistid}:
+    delete:
+      summary: Delete artist by id
+      tags:
+        - artist
+      parameters:
+        - name: artistid
+          in: path
+          required: true
+          type: int
+      responses:
+        '200':
+          description: Peoples deleted
+  '/tracks':
+    get:
+      summary: get tracks by name
+      tags:
+        - track
+      responses:
+        '200':
+          description: your tracks
+  '/tracks/{id}':
+    get:
+      summary: get tracks by id
+      tags:
+        - track
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: your tracks
+  '/tracks/{artist}/{name}':
+    get:
+      summary: get tracks by artist and name 
+      tags:
+        - track
+      parameters:
+        - name: artist
+          in: path
+          required: true
+          type: string
+        - name: name
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: your tracks
+  '/tracks/{trackid}':
+    delete:
+      summary: delete track by id
+      tags:
+        - track
+      parameters:
+        - name: trackid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: track deleted
+  '/tracksgenre/{genreid}':
+    get:
+      summary: get tracks by genre
+      tags:
+        - track
+      parameters:
+        - name: genreid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: get your tracks
+  '/tracksplaycount/{playcount}':
+    get:
+      summary: get tracks by playcount
+      tags:
+        - track
+      parameters:
+        - name: playcount
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: get your tracks
+  '/tracksartist/{artistid}':
+    get:
+      summary: get tracks by artist
+      tags:
+        - track
+      parameters:
+        - name: artistid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: get your tracks
+  '/trackstat':
+    get: 
+      summary: get tracks from profile
+      tags:
+        - trackshelf
+      responses:
+        '200':
+          description: get your tracks
+  '/trackstat/{status}':
+    get:
+      summary: get tracks by status
+      tags:
+        - trackshelf
+      parameters:
+        - name: status
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: get your tracks
+    put:
+      summary: change status of track
+      tags:
+        - trackshelf
+      parameters:
+        - name: status
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: status changed
+  '/trackstat/{trackid}':
+    get:
+      summary: get track associated with profile by id
+      tags:
+        - trackshelf
+      parameters:
+        - name: trackid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: get your tracks
+    post:
+      summary: add track associated with profile by id
+      tags:
+        - trackshelf
+      parameters:
+        - name: trackid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: track added
+    delete:
+      summary: delete track associated with profile by id
+      tags:
+        - trackshelf
+      parameters:
+        - name: trackid
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: track deleted
+  '/genres':
+    post:
+      summary: set genre to track
+      tags:
+        - genre
+      responses:
+        '200':
+          description: genre added
+  '/playcounts':
+    post:
+      summary: add playcount
+      tags:
+        - rating
+      responses:
+        '200':
+          description: playcount added
+    delete:
+      summary: delete playcount
+      tags:
+        - rating
+      responses:
+        '200':
+          description: playcount deleted
+  '/playcounts/{playcount}':
+    put:
+      summary: change playcount
+      tags:
+        - rating
+      responses:
+        '200':
+          description: playcount changed
+  '/reviews':
+    put:
+      summary: change review
+      tags:
+        - review
+      responses:
+        '200':
+          description: review changed
+    post:
+      summary: add review
+      tags:
+        - review
+      responses:
+        '200':
+          description: review added
+    delete:
+      summary: delete review
+      tags:
+        - review
+      responses:
+        '200':
+          description: review deleted

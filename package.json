@@ -1,0 +1,38 @@
+{
+  "name": "audioteca",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "body-parser-xml": "^1.1.0",
+    "connect-redis": "^3.2.0",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "easyxml": "^2.0.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "google-tracks-search": "^0.3.1",
+    "jade": "^1.11.0",
+    "jest": "^20.0.4",
+    "jsonwebtoken": "^7.3.0",
+    "mysql": "^2.11.1",
+    "needle": "^1.6.0",
+    "passport": "^0.3.2",
+    "passport-facetrack": "^2.1.1",
+    "passport-vkontakte": "^0.3.2",
+    "pg": "^6.2.3",
+    "sequelize": "^3.24.1"
+  },
+  "enjines": {
+    "node": "7.8.0"
+  },
+   "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+   },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  }
+}
