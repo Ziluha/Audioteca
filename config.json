@@ -8,11 +8,11 @@
   },
   "postgres": {
     "dialect":"postgres",
-    "host": "ec2-107-21-108-204.compute-1.amazonaws.com",
-    "name": "dcfq185ecaibfe",
-    "user": "sglvnmzbswdsje",
+    "host": "ec2-46-137-97-169.eu-west-1.compute.amazonaws.com",
+    "name": "d96uoi4nsi70pi",
+    "user": "ecnfsvsxwrxpvh",
     "port": "5432",
-    "password": "c51a661e71853eaf0b417bc894350739cb5f81cf15bfc907b70cebad21c6635d",
+    "password": "27351261de00b04eb4ca7857f32cf9ba70bd379040678b09ea51d1587fa5fbd0",
     "dialectOptions": { "ssl": true }
   }
 }
